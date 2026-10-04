@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rental Housing Law Navigator</title>
+<meta name="description" content="Which rental housing rules apply at an address today, with citations, and how pending or new laws change the answer.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="disclaimer" id="disclaimer"></div>
+<header class="top">
+  <div class="brand">
+    <div class="logo" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div>
+      <h1 id="t-title">Rental Housing Law Navigator</h1>
+      <p id="t-sub" class="muted"></p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <nav class="tabs" role="tablist">
+      <button class="tab on" data-tab="lookup" role="tab" id="tab-lookup"></button>
+      <button class="tab" data-tab="changes" role="tab" id="tab-changes"></button>
+      <button class="tab" data-tab="how" role="tab" id="tab-how"></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="view-lookup" class="view">
+    <div class="lookup-hero">
+      <div class="hero-title">
+        <p class="eyebrow" id="t-kicker">RENTAL LAW / CA · NJ · MA</p>
+        <h2 id="t-hero">What rules shape this address?</h2>
+      </div>
+    <div class="controls card">
+      <div class="field grow">
+        <label for="q" id="l-address"></label>
+        <div class="search">
+          <input id="q" type="search" autocomplete="off" spellcheck="false">
+          <ul id="suggest" class="suggest" hidden></ul>
+        </div>
+        <div class="chips" id="examples"></div>
+      </div>
+      <div class="field">
+        <label for="asof" id="l-asof"></label>
+        <input id="asof" type="date">
+        <div class="chips" id="datechips"></div>
+      </div>
+    </div>
+    </div>
+    <div id="result"></div>
+  </section>
+
+  <section id="view-changes" class="view" hidden></section>
+  <section id="view-how" class="view" hidden></section>
+</main>
+<div id="audit-scrim" class="audit-scrim" hidden></div>
+<aside id="audit-panel" class="audit-panel" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Rule audit details" inert></aside>
+<footer class="foot muted" id="foot"></footer>
+<script src="app.js"></script>
+</body>
+</html>

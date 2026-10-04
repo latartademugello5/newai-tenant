@@ -1,0 +1,103 @@
+{
+  "T1": {
+    "title": "California AB 325 / SB 763 takes effect",
+    "pass": true,
+    "checks": [
+      {
+        "ok": true,
+        "what": "2025-12-31: every CA address is 'not_yet_effective' (250/250)"
+      },
+      {
+        "ok": true,
+        "what": "2026-01-02: every CA address is 'applies' (250/250)"
+      }
+    ],
+    "rule_ids_used": [
+      "r-0027",
+      "r-0028"
+    ]
+  },
+  "T2": {
+    "title": "Hoboken vs Jersey City local algorithmic bans",
+    "pass": true,
+    "checks": [
+      {
+        "ok": true,
+        "what": "each local ban appears only inside its own city (violations: 0)"
+      },
+      {
+        "ok": true,
+        "what": "no local ban reported for Newark addresses (0 found)"
+      }
+    ],
+    "rule_ids_used": [
+      "r-0072",
+      "r-0074"
+    ]
+  },
+  "T3": {
+    "title": "NJ FAIR Act: enacted, not yet effective; possible preemption",
+    "pass": true,
+    "checks": [
+      {
+        "ok": true,
+        "what": "2026-10-01: every NJ address is 'not_yet_effective' (140/140)"
+      },
+      {
+        "ok": true,
+        "what": "2027-07-02: every NJ address is 'applies' (140/140)"
+      },
+      {
+        "ok": true,
+        "what": "conflict flag on all Jersey City + Hoboken addresses and nothing else (89/89 flagged, 0 extra)"
+      }
+    ],
+    "rule_ids_used": [
+      "r-0166",
+      "r-0167",
+      "r-0168",
+      "r-0169",
+      "r-0170"
+    ]
+  },
+  "T4": {
+    "title": "Massachusetts pending bills S.2983 and H.5222",
+    "pass": true,
+    "checks": [
+      {
+        "ok": true,
+        "what": "all Massachusetts addresses listed as pending (110/110)"
+      },
+      {
+        "ok": true,
+        "what": "pending bills are never reported as 'applies'"
+      }
+    ],
+    "rule_ids_used": [
+      "r-0089",
+      "r-0090",
+      "r-0091"
+    ]
+  },
+  "T5": {
+    "title": "Massachusetts rent-control ballot question struck",
+    "pass": true,
+    "checks": [
+      {
+        "ok": true,
+        "what": "affected set is empty (0 found)"
+      },
+      {
+        "ok": true,
+        "what": "no rent cap reported for any Boston/Cambridge address (0 found)"
+      },
+      {
+        "ok": true,
+        "what": "the ballot question is recorded with status 'failed'"
+      }
+    ],
+    "rule_ids_used": [
+      "r-0108"
+    ]
+  }
+}

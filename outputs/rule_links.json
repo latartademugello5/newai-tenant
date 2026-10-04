@@ -1,0 +1,347 @@
+[
+  {
+    "state": "CA",
+    "model": "claude-sonnet-5-5",
+    "usage": {
+      "in": 19007,
+      "out": 1536
+    },
+    "result": {
+      "merges": [
+        {
+          "keep": "r-0045",
+          "drop": [
+            "r-0044"
+          ],
+          "reason": "Both state Cal. Civ. Code 1950.5(m) bad-faith retention statutory damages up to 2x security plus actual damages."
+        },
+        {
+          "keep": "r-0203",
+          "drop": [
+            "r-0205"
+          ],
+          "reason": "Both state the SF Rent Board 1.6% allowable annual increase for 3/1/2026-2/28/2027."
+        },
+        {
+          "keep": "r-0210",
+          "drop": [
+            "r-0208"
+          ],
+          "reason": "Both describe the Santa Ana Just Cause Eviction Ordinance requirement."
+        },
+        {
+          "keep": "r-0207",
+          "drop": [
+            "r-0209"
+          ],
+          "reason": "Both state the Santa Ana annual cap of the lower of 3% or 80% of CPI change."
+        }
+      ],
+      "supersedes": [],
+      "conflicts": [
+        {
+          "rules": [
+            "r-0034",
+            "r-0017",
+            "r-0009",
+            "r-0016"
+          ],
+          "kind": "ambiguity",
+          "note": "State rent cap (Civ. Code 1947.12) applies depending on local rent control; Berkeley rent control may be the stricter local rule. Needs human review."
+        },
+        {
+          "rules": [
+            "r-0030",
+            "r-0011",
+            "r-0018",
+            "r-0087",
+            "r-0190",
+            "r-0200",
+            "r-0208",
+            "r-0210"
+          ],
+          "kind": "ambiguity",
+          "note": "State just cause law (Civ. Code 1946.2) interacts with local just cause ordinances; which governs depends on local ordinance stringency."
+        },
+        {
+          "rules": [
+            "r-0028",
+            "r-0029",
+            "r-0001",
+            "r-0002",
+            "r-0204",
+            "r-0198",
+            "r-0199"
+          ],
+          "kind": "ambiguity",
+          "note": "State Cartwright Act algorithmic pricing rules and local algorithmic rent-setting bans overlap; interaction/preemption unclear."
+        }
+      ],
+      "aliases": [
+        {
+          "alias": "CA-ALG-01",
+          "rules": [
+            "r-0028",
+            "r-0029"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "state": "MA",
+    "model": "claude-sonnet-5-5",
+    "usage": {
+      "in": 7690,
+      "out": 699
+    },
+    "result": {
+      "merges": [
+        {
+          "keep": "r-0103",
+          "drop": [
+            "r-0104"
+          ],
+          "reason": "Same pending bill S.2983, two documents with title only"
+        },
+        {
+          "keep": "r-0121",
+          "drop": [
+            "r-0123",
+            "r-0130"
+          ],
+          "reason": "Same failed Initiative Petition 25-21 rent cap, struck by SJC"
+        },
+        {
+          "keep": "r-0105",
+          "drop": [
+            "r-0122"
+          ],
+          "reason": "Same statutory ban on rent control, G.L. c. 40P"
+        },
+        {
+          "keep": "r-0106",
+          "drop": [
+            "r-0023"
+          ],
+          "reason": "Source-of-income discrimination ban; Boston rule is a local summary of the state rule (Section 8 refusal)"
+        }
+      ],
+      "supersedes": [],
+      "conflicts": [
+        {
+          "rules": [
+            "r-0121",
+            "r-0105",
+            "r-0122"
+          ],
+          "kind": "preemption",
+          "note": "Failed initiative would have repealed the c. 40P ban on rent control; ban remains in force. Review status."
+        },
+        {
+          "rules": [
+            "r-0119",
+            "r-0120"
+          ],
+          "kind": "ambiguity",
+          "note": "c. 186 §15B bars fees beyond first/last/deposit/lock, while 254 CMR 7 allows licensed brokers to charge fees to tenants; interaction depends on whether the landlord is also the broker."
+        },
+        {
+          "rules": [
+            "r-0020",
+            "r-0124",
+            "r-0125"
+          ],
+          "kind": "ambiguity",
+          "note": "Boston Fair Chance Policy criminal history limits overlap with state CORI rules (803 CMR 5); interaction unclear."
+        }
+      ],
+      "aliases": [
+        {
+          "alias": "MA-ALG-P1",
+          "rules": [
+            "r-0103",
+            "r-0104"
+          ]
+        },
+        {
+          "alias": "MA-ALG-P2",
+          "rules": [
+            "r-0101",
+            "r-0102"
+          ]
+        },
+        {
+          "alias": "MA-RENT-P1",
+          "rules": [
+            "r-0121",
+            "r-0123",
+            "r-0130"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "state": "NJ",
+    "model": "claude-sonnet-5-5",
+    "usage": {
+      "in": 18582,
+      "out": 2107
+    },
+    "result": {
+      "merges": [
+        {
+          "keep": "r-0056",
+          "drop": [
+            "r-0077"
+          ],
+          "reason": "Same Hoboken §155-5 annual cap (lesser of 5% or CPI), duplicated across docs"
+        },
+        {
+          "keep": "r-0057",
+          "drop": [
+            "r-0076"
+          ],
+          "reason": "Same Hoboken §155-4 base rent Oct 1 1985 control"
+        },
+        {
+          "keep": "r-0058",
+          "drop": [
+            "r-0078"
+          ],
+          "reason": "Same Hoboken §155-3 increases only at lease expiration"
+        },
+        {
+          "keep": "r-0064",
+          "drop": [
+            "r-0079"
+          ],
+          "reason": "Same Hoboken §155-10 capital improvement surcharge cap"
+        },
+        {
+          "keep": "r-0062",
+          "drop": [
+            "r-0080"
+          ],
+          "reason": "Same Hoboken §155-6 tax surcharge"
+        },
+        {
+          "keep": "r-0063",
+          "drop": [
+            "r-0081"
+          ],
+          "reason": "Same Hoboken §155-6.1 water/sewer surcharge"
+        },
+        {
+          "keep": "r-0066",
+          "drop": [
+            "r-0082"
+          ],
+          "reason": "Same Hoboken §155-14 hardship increase"
+        },
+        {
+          "keep": "r-0067",
+          "drop": [
+            "r-0069"
+          ],
+          "reason": "Same Hoboken §155-25 rent ceiling"
+        },
+        {
+          "keep": "r-0068",
+          "drop": [
+            "r-0070"
+          ],
+          "reason": "Same Hoboken §155-26 certificate of compliance"
+        },
+        {
+          "keep": "r-0150",
+          "drop": [
+            "r-0153"
+          ],
+          "reason": "Same NJ 5-business-day deposit return when tenant displaced"
+        },
+        {
+          "keep": "r-0186",
+          "drop": [
+            "r-0132"
+          ],
+          "reason": "Same FAIR Act ban on coordinators facilitating anticompetitive agreements"
+        },
+        {
+          "keep": "r-0185",
+          "drop": [
+            "r-0131"
+          ],
+          "reason": "Same FAIR Act ban on owners using coordinator algorithmic pricing services"
+        },
+        {
+          "keep": "r-0086",
+          "drop": [
+            "r-0084"
+          ],
+          "reason": "Same Jersey City ban on rent-setting algorithms; r-0086 has code citation"
+        }
+      ],
+      "supersedes": [],
+      "conflicts": [
+        {
+          "rules": [
+            "r-0083",
+            "r-0086",
+            "r-0084",
+            "r-0185",
+            "r-0186",
+            "r-0131",
+            "r-0132"
+          ],
+          "kind": "preemption",
+          "note": "Local algorithmic rent-setting bans in Hoboken and Jersey City overlap with the statewide FAIR Act (effective 2027-07-01); interaction/preemption is unclear and needs review."
+        },
+        {
+          "rules": [
+            "r-0084",
+            "r-0086"
+          ],
+          "kind": "date_discrepancy",
+          "note": "Jersey City ordinance described as passed May 21, 2025 in one doc and effective 2025-06 in another; no ordinance number in r-0084."
+        },
+        {
+          "rules": [
+            "r-0142",
+            "r-0157"
+          ],
+          "kind": "ambiguity",
+          "note": "$50 application fee cap (effective 2026-05-01, min 3 units) vs general 'reasonable application fee' statement; coverage interaction unclear."
+        }
+      ],
+      "aliases": [
+        {
+          "alias": "HOB-ALG-01",
+          "rules": [
+            "r-0083"
+          ]
+        },
+        {
+          "alias": "JC-ALG-01",
+          "rules": [
+            "r-0084",
+            "r-0086"
+          ]
+        },
+        {
+          "alias": "NJ-ALG-01",
+          "rules": [
+            "r-0131",
+            "r-0132",
+            "r-0185",
+            "r-0186",
+            "r-0187",
+            "r-0188",
+            "r-0189"
+          ]
+        }
+      ]
+    }
+  }
+]
